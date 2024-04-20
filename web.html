@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+           <h4>Gowdru Hudugi😎👸</h4><br>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text"><br><br><br>
+            <p>Web designer</p>
+            <h1> I'm <span>Supriya Gowda</span><br>from Bengaluru</h1>
+        </div>
+    </div>
+   </div> 
+  <!-- -------------About------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/sonu1.jpg">
+            </div> 
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Supriya Gowda basically from Bengaluru studying BCA final year in SJR College.. 
+                    I have done my PU in SJR Womens College.. And SSLC in The New Cambridge High School..
+                    I use to play Hockey and Volleyball and I was a district player for both the games.
+                    Love to listen the music and do some video in social media platfrom.. <br>
+                    Now I am an intern in Mevi Technologies which is located near Nagarbavi </p><br>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C language--</span><br></li>
+                            <li><span>Web Development--</span><br>web app Development</li>
+                            <li><span>Database Management skills--</span><br>object-oriented database</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-19</span><br>The New Cambridge High School bangalore</li>
+                            <li><span>2019-2021</span><br>SJRC Womens pu College bangalore</li>
+                            <li><span>2021-2024</span><br>SJR Degree College Bangalore</li>
+                        </ul>
+                    </div>
+             </div>
+            </div>
+    </div>
+</div>
+<!-- ---------------------portfolio----------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/voter1.jpeg">
+                <div class="layer">
+                    <h3>Voting Pool </h3>
+                    <p>If We Dont Vote.We are Ignoring History and giving away the Future...</p>
+                    
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="image/result prediction.jpeg">
+                <div class="layer">
+                    <h3>Result form</h3>
+                    <p>A Little Process Each Day Adds Up To Big Result...</p>
+                       
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="image/billing menu.jpeg">
+                <div class="layer">
+                    <h3>Billing System</h3>
+                    <p>Food is my love language.
+                        Indulging in flavors that make life delicious.</p>
+                  
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<!-- ------------------------contact------- -->
+<div id="contact">
+    <div class="conta">
+        <div class="r">
+            <div class="contact-left">
+                <center><h1 class="sub-title">Contact Me</h1></center>
+                <p id="a">gowdruhudugi01@gmail.com</p>
+                <p id="b">0123456789</p>
+                <p id="c">Adress : Hosahlli metro station..</p>
+                <a id="e" href="i" download class="btn btn2">Hire me </a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright ©SupriyaGowda🖤.2024</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
